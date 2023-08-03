@@ -25,7 +25,7 @@ const SignUp=()=>{
         
         if(firstName && lastName && email && (password = confirmPassword))
         {
-            axios.post('http://localhost/4000/signup', data)
+            axios.post('http://localhost:4000/signup', data)
             .then((res)=>{
                 alert(res.data.message)
                 navigate('/')
