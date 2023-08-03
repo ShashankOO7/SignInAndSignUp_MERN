@@ -42,7 +42,7 @@ const SignUp=()=>{
         <div className={style.main}>
         <div className={style.block}>
             <form action="" onSubmit={handleSubmit} method="POST">
-            <h1>Sign Up</h1><br/>
+            <h1 className={style.color}>Sign Up</h1><br/>
                 {/* <label htmlFor="">First Name:</label> */}
                 <input type="text" name="firstname" placeholder="Enter First Name" ref={firstName}/><br/><br/>
                 {/* <label htmlFor="">Last Name:</label> */}
@@ -53,7 +53,7 @@ const SignUp=()=>{
                 <input type="password" name="password" placeholder="Enter Password" ref={password} /><br /><br />
                 <input type="password" name="confirmPassword" placeholder="Confirm Password" ref={confirmPassword}/><br /><br />
                 <button className='btn btn-primary'>Submit</button><br />
-                <p>Already have an account? <Link to="/">Sign In</Link></p>
+                <p className={style.color}>Already have an account? <Link to="/">Sign In</Link></p>
             </form>
         </div>
         </div>
